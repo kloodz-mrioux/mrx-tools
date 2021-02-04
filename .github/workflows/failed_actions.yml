@@ -1,0 +1,7 @@
+name: failed-actions
+on: [push]
+jobs:
+  check-ansible:
+    runs-on: python:3-slim
+    steps:
+      - run: python -version
